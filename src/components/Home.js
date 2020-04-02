@@ -68,7 +68,7 @@ export default class Home extends Component {
                 </Container>
 
 
-
+                <div>dsad</div>
                 <Carousel_component />
 
             </div>
