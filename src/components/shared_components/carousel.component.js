@@ -20,7 +20,7 @@ export const Carousel_component = (props) => {
           <img
 
           
-            className="d-block w-100 w-100"
+            className="d-block w-100"
             
             src="./pictures/product_img/SupaMop I/rectangular.jpg"
             alt="First slide"
@@ -33,7 +33,7 @@ export const Carousel_component = (props) => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 w-200"
+            className="d-block w-100"
             src="/pictures/product_img/cloth/Optimized-3_new.jpg"
             alt="Second slide"
           />
