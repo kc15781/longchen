@@ -18,9 +18,11 @@ export const Carousel_component = (props) => {
       <Carousel className="mt-5" activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
-            style={{heiht:'200px'}}
+
+          
+            className="d-block w-100 w-100"
             
-            src="./pictures/product_img/SupaMop I/small-IMG_4098_final.jpg"
+            src="./pictures/product_img/SupaMop I/rectangular.jpg"
             alt="First slide"
           
           />
