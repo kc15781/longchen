@@ -25,7 +25,7 @@ function App() {
     
             <Router>
 
-                <NavBar change_locale={change_locale} spacing={spacing} />
+                <NavBar change_locale={change_locale} />
  
            
                 <Route path="/" exact render={(props) => <Home {...props} spacing={spacing} />} />

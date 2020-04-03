@@ -10,7 +10,8 @@ import {Carousel_component} from './shared_components/carousel.component.js'
 export default class Home extends Component {
     constructor(props) {
         super(props);
-
+        this.src=['./pictures/product_img/SupaMop I/rectangular.jpg', './pictures/product_img/SupaMop I/rectangular.jpg', './pictures/product_img/SupaMop I/rectangular.jpg'];
+        this.title= ['SupaMop I', 'SupaMop II', 'SupaMop III'];
     }
 
 
@@ -68,8 +69,7 @@ export default class Home extends Component {
                 </Container>
 
 
-                <div>dsad</div>
-                <Carousel_component />
+                <Carousel_component src={this.src} title={this.title}/>
 
             </div>
 
