@@ -19,8 +19,7 @@ export const Carousel_component = (props) => {
         <Carousel.Item>
           <img
           
-            className="d-block"
-            
+            className="d-block w-100"            
             src="./pictures/product_img/SupaMop I/rectangular.jpg"
             alt="First slide"
           
