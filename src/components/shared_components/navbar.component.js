@@ -26,7 +26,7 @@ const Animation_logo = () => {
     return <div>
         <Animated animationIn="flipInX" animationOut="fadeOut" isVisible={true}>
             <animated.div style={fade}>
-                <Image src="./logo/logo.png" className="logo" fluid/>
+                <Image src="./logo/logo.png" className="logo shadow_custom" fluid/>
             </animated.div>
         </Animated>
     </div>

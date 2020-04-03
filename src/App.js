@@ -15,7 +15,7 @@ function App() {
 
 
     const [locale, setLocale] = useState("en");
-    const spacing ='25px';
+
     function change_locale(new_locale) {
         setLocale(new_locale);
     }
@@ -28,7 +28,7 @@ function App() {
                 <NavBar change_locale={change_locale} />
  
            
-                <Route path="/" exact render={(props) => <Home {...props} spacing={spacing} />} />
+                <Route path="/" exact render={(props) => <Home {...props} locale={locale} />} />
                 <Route path="/Product" component={Product} />
                 <Route path="/Employment" component={Employment} />
 
