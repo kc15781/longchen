@@ -28,8 +28,7 @@ body{font-size: 20px;}
 .shadow_custom{box-shadow: 5px 5px 20px;}
 
 .circle{
-height: 150px;
-    width:150px;
+
+    width:225px;
 }
 
-#CircularProgressbarWithChildren{width:150px;}

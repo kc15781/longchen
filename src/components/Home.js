@@ -5,13 +5,11 @@ import { FormattedMessage} from 'react-intl';
 import { Row, Col, Container } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import {Carousel_component} from './shared_components/carousel.component.js'
-
+import {Circle_component} from './shared_components/circle.component.js'
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import VisibilitySensor from "react-visibility-sensor";
-import { CircularProgressbar,CircularProgressbarWithChildren } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+
 
 export default class Home extends Component {
     constructor(props) {
@@ -26,6 +24,9 @@ export default class Home extends Component {
         < FormattedMessage id="tooth" defaultMessage="Toothbrush Holder " />,< FormattedMessage id="towel" defaultMessage="Towel Rack" />];
         this.product_directory="./pictures/product_img/home_page/";
         this.state = { map_directory: '.png' };
+        this.circle_heading=[["Land","Workers"],["Machines","Customisation"],["Total Assets","Awards"]];
+        this.circle_detail=[[<React.Fragment>35200 m<sup>2</sup></React.Fragment>,"58"],["30 machines","ODM"],[<React.Fragment>260M &#3647;</React.Fragment>,"7-Catalog "]];
+       
     }
     componentDidUpdate(prevProps) {
  
@@ -151,133 +152,9 @@ export default class Home extends Component {
                  </Row>
                 </Container>
                 
-
-
-                <VisibilitySensor >
-            {({ isVisible }) => {
-              const percentage = isVisible ? 100 : 0;
-              return (<>
-              <div className="bg_color3 mt-5">
-              <Row className="justify-content-center align-items-center text-center py-5">
-                
-                <div className="col-12 col-sm-4 py-5">
-                <h3>Land</h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div >
-                35200 m<sup>2</sup>
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-                <div className="col-12 col-sm-4">
-                <h3>Workers</h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div >
-                58
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-
-
-
-
-                </Row>
-                </div>
-                </>
-              );
-            }}
-          </VisibilitySensor>
-        
-
-          <VisibilitySensor >
-            {({ isVisible }) => {
-              const percentage = isVisible ? 100 : 0;
-              return (<>
-              <div className="bg_color3 ">
-              <Row className="justify-content-center align-items-center text-center py-5">
-                
-              <div className="col-12 col-sm-4">
-                <h3>Machines </h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div >
-                30 machines
-                </div>
-                <div >
-                120 - 650t
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-                <div className="col-12 col-sm-4">
-                <h3>Customisation</h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div >
-                ODM
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-
-
-
-
-                </Row>
-                </div>
-                </>
-              );
-            }}
-          </VisibilitySensor>
-
-          <VisibilitySensor >
-            {({ isVisible }) => {
-              const percentage = isVisible ? 100 : 0;
-              return (<>
-              <div className="bg_color3">
-              <Row className="justify-content-center align-items-center text-center py-5">
-                
-
-              <div className="col-12 col-sm-4">
-                <h3>Total Assets</h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div >
-                260M &#3647;
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-                <div className="col-12 col-sm-4">
-                <h3>Awards</h3>
-                <div className="circle mx-auto">
-                <CircularProgressbarWithChildren value={percentage} >
-                <div>
-                7-Catalog 
-                </div>
-                </CircularProgressbarWithChildren>
-                </div>
-                </div>
-
-
-
-
-
-                </Row>
-                </div>
-                </>
-              );
-            }}
-          </VisibilitySensor>
-
+                <Container className="mt-5">
+                <Circle_component  detail={this.circle_detail} heading={this.circle_heading}/>
+                </Container>
 
 
 
