@@ -15,6 +15,7 @@ export default class Home extends Component {
     constructor(props) {
         super(props);
         this.src=['sup1', 'sup2','sup3','sup4','cloth','sponge','polisher','hooks','hook','hook_set','soap','toothbrush','towel'];
+
         this.product_title= [< FormattedMessage id="supa1" defaultMessage="SupaMop I" />, < FormattedMessage id="supa2" defaultMessage="SupaMop II" />,
         < FormattedMessage id="supa3" defaultMessage="SupaMop III" />,< FormattedMessage id="supa4" defaultMessage="SupaMop IV" />,
         < FormattedMessage id="supa5" defaultMessage="SupaMop V (Magic Cloth)" />,< FormattedMessage id="sponge" defaultMessage="Magic Sponge" />,
@@ -22,10 +23,19 @@ export default class Home extends Component {
         < FormattedMessage id="hook" defaultMessage="Hook" />,< FormattedMessage id="collection" defaultMessage="Whole Set Of Supa Magic Hook Collection Products" />,
         < FormattedMessage id="soap" defaultMessage="Soap Dish" />,
         < FormattedMessage id="tooth" defaultMessage="Toothbrush Holder " />,< FormattedMessage id="towel" defaultMessage="Towel Rack" />];
+
         this.product_directory="./pictures/product_img/home_page/";
         this.state = { map_directory: '.png' };
-        this.circle_heading=[["Land","Workers"],["Machines","Customisation"],["Total Assets","Awards"]];
-        this.circle_detail=[[<React.Fragment>35200 m<sup>2</sup></React.Fragment>,"58"],["30 machines","ODM"],[<React.Fragment>260M &#3647;</React.Fragment>,"7-Catalog "]];
+
+        this.circle_heading=[[< FormattedMessage id="circle1_h" defaultMessage="Land" />,< FormattedMessage id="circle2_h" defaultMessage="Number of workers" />],
+        [< FormattedMessage id="circle3_h" defaultMessage="Number of machines" />,< FormattedMessage id="circle4_h" defaultMessage="Customisation" />],
+        [< FormattedMessage id="circle5_h" defaultMessage="Total Assets" />,< FormattedMessage id="circle6_h" defaultMessage="Awards" />]];
+
+    this.circle_detail=[[ <React.Fragment>35200 m<sup>2</sup></React.Fragment>,
+        "58"],
+    [< FormattedMessage id="circle3_d" defaultMessage={<React.Fragment><div>30 machines</div><div>120 - 650t</div></React.Fragment>} />,
+    "ODM"],["260M ฿",
+    "7-Catalog"]];
        
     }
     componentDidUpdate(prevProps) {
