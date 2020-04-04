@@ -31,15 +31,12 @@ export default class Home extends Component {
         [< FormattedMessage id="circle3_h" defaultMessage="Number of machines" />,< FormattedMessage id="circle4_h" defaultMessage="Customisation" />],
         [< FormattedMessage id="circle5_h" defaultMessage="Total Assets" />,< FormattedMessage id="circle6_h" defaultMessage="Awards" />]];
 
-    this.circle_detail=[[ <React.Fragment>35200 m<sup>2</sup></React.Fragment>,
-        "58"],
-    [< FormattedMessage id="circle3_d" defaultMessage={<React.Fragment><div>30 machines</div><div>120 - 650t</div></React.Fragment>} />,
-    "ODM"],["260M ฿",
-    "7-Catalog"]];
+    this.circle_detail=[[ <React.Fragment>35200 m<sup>2</sup></React.Fragment>,"58"],
+    [<React.Fragment><div>30 < FormattedMessage id="circle3_d" defaultMessage="machines"/></div><div>120 - 650t</div></React.Fragment>,"ODM"],
+    ["260M ฿","7-Catalog"]];
        
     }
     componentDidUpdate(prevProps) {
- 
 
         if(prevProps.locale!=this.props.locale){
             if(this.props.locale=="en"){

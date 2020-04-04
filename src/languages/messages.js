@@ -44,7 +44,7 @@ export const messages = {
         circle4_h:"订制",
         circle5_h:"总资产",
         circle6_h:"销售奖",
-        circle3_d:"260M ฿",
+        circle3_d:"台",
 
         
 
@@ -90,7 +90,7 @@ export const messages = {
         circle4_h:"รับจ้างฉีดเพื่อก่อรูปสินค้า",
         circle5_h:"จำนวนสินทรัพย์ทั้งหมด",
         circle6_h:"รางวัล",
-        circle3_d:"机器数量",
+        circle3_d:"เครื่อง",
 
     }
 };
