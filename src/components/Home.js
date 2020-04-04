@@ -22,26 +22,21 @@ export default class Home extends Component {
         < FormattedMessage id="soap" defaultMessage="Soap Dish" />,
         < FormattedMessage id="tooth" defaultMessage="Toothbrush Holder " />,< FormattedMessage id="towel" defaultMessage="Towel Rack" />];
         this.product_directory="./pictures/product_img/home_page/";
-        
-        
-
         this.state = { map_directory: '.png' };
-
-
-      
     }
-    componentDidUpdate(prevProps,props) {
+    componentDidUpdate(prevProps, prevState, snapshot) {
  
-        if (this.props.userID !== prevProps.userID) {
-            this.fetchData(this.props.userID);
 
-          }else{            console.log(this.props.locale);
+        if(prevProps.locale!=this.props.locale){
             if(this.props.locale=="en"){
                 this.setState({ map_directory: '.png' });
-    
-    
-            }else{ this.setState({ map_directory: '' });};}
-
+            }else if(this.props.locale=="zh"){
+                this.setState({ map_directory: '_chinese.png' });
+            }else{
+                this.setState({ map_directory: '_thai.png' });
+            }
+        
+        }
 
     }
 
@@ -109,7 +104,6 @@ export default class Home extends Component {
                         </div>
                         
                     </Row>   
-                    
                     <Row >
 
 
