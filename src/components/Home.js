@@ -91,7 +91,7 @@ export default class Home extends Component {
 
                         <p>< FormattedMessage id="intrduction2" defaultMessage="Longbee Plastic Co., Ltd., since its original founding year of 1960, has been challenged by a series of product requirements and designs due to its broad and experienced knowledge in plastic injection moulding. The company is widely known and trusted in this particular specialised field. Mr. Longyi Chu, father of Mr. Chen-I Chu, further excelled in his career by becoming the only president of plastic business association to have taken the position for 2 consecutive years in Hsinchu city, Taiwan whilst no one else has taken it for more than one year." /></p>
 
-                        <p>< FormattedMessage id="intrduction3" defaultMessage="On Mr. Longyi Chu's request, Longbee Plastic Co., Ltd. was set up in Thailand by Mr. Chen-I Chu in 2002. Later in 2014 the company expanded in size and relocated to Chonburi. About the same time it was renamed to Longchen Technology Co., Ltd. and currently the size increased to 35200 m2." /></p>
+                        <p>< FormattedMessage id="intrduction3" defaultMessage="On Mr. Longyi Chu's request, Longbee Plastic Co., Ltd. was set up in Thailand by Mr. Chen-I Chu in 2002. Later in 2014 the company expanded in size and relocated to Chonburi. About the same time it was renamed to Longchen Technology Co., Ltd. and currently the size increased to 35200 " />< FormattedMessage id="intrduction3_1" defaultMessage={<React.Fragment> m<sup>2</sup></React.Fragment>} />< FormattedMessage id="intrduction3_2" defaultMessage="." /></p>
 
 
                     </div>
