@@ -31,6 +31,7 @@ function App() {
                 <Route path="/" exact render={(props) => <Home {...props} locale={locale} />} />
                 <Route path="/Product" component={Product} />
                 <Route path="/Employment" component={Employment} />
+                
 
             </Router>
         </IntlProvider>
