@@ -9,7 +9,7 @@ import {Circle_component} from './shared_components/circle.component.js'
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import {Bottom_component} from './shared_components/bottom.component.js'
 
 export default class Home extends Component {
     constructor(props) {
@@ -77,13 +77,13 @@ export default class Home extends Component {
 
                     <div className="bg_color3 px-5  py-5 mt-5">
                      
-                    <Row>
-                        <h1 className="mb-5 col-12" style={{borderBottom:"solid white", textAlign:'center'}}>< FormattedMessage id="History_title" defaultMessage="Our History" /></h1> 
-                    </Row>
+                   
+                        <h1 className="mb-5 " style={{borderBottom:"solid white", textAlign:'center'}}>< FormattedMessage id="History_title" defaultMessage="Our History" /></h1> 
+       
 
-                    <Row >
+                  
 
-                    <div className="col-12 mb-5">
+                    <div className=" mb-5">
 
                         
 
@@ -98,7 +98,7 @@ export default class Home extends Component {
 
 
 
-                    </Row>
+                   
                     
                     <Row className="bg_color5 shadow_custom" data-aos="flip-left">
                         <div className="col-auto ml-auto ">   
@@ -113,11 +113,11 @@ export default class Home extends Component {
                         </div>
                         
                     </Row>   
-                    <Row >
+                   
 
 
                         
-                        <div className="col-12 mt-5 ">
+                        <div className=" mt-5 ">
 
                             
                             <p>< FormattedMessage id="intrduction4" defaultMessage="Longchen Technology Co., Ltd has superior experience in production of several plastic products, including electronics, automobile components, treadmills, hospital beds and many more. All products produced are either self-designed or patents are bought which legally allow the production. At present, SupaMop is the most famous manufactured product across South-East Asia and Europe. The company's management philosophy is to provide an optimal working environment for the workers up to a degree that the company would be seemingly their home. This is achieved in order to boost the productivity and quality of the products and thus satisfying the customers. The factory has a number of injection presses ranging from 120 to 650 tonnes and in total 30 machines are fully functional." /></p>
@@ -130,7 +130,7 @@ export default class Home extends Component {
 
 
 
-                    </Row>
+                    
                     
 
                     </div>
@@ -138,7 +138,7 @@ export default class Home extends Component {
                 
 
                 <Container className="mt-5 bg_color2">
-                 <h1 className="mb-1 pt-5 col-12" style={{borderBottom:"solid white", textAlign:'center'}}>< FormattedMessage id="Products_title" defaultMessage="Our Products" /></h1>   
+                 <h1 className="mb-1 pt-5" style={{borderBottom:"solid white", textAlign:'center'}}>< FormattedMessage id="Products_title" defaultMessage="Our Products" /></h1>   
                  <Row>
                  <div className="col-12 col-xl-6">
                  <Carousel_component  src={this.src} title={this.product_title} directory={this.product_directory}/>
@@ -163,9 +163,11 @@ export default class Home extends Component {
                 <Circle_component  detail={this.circle_detail} heading={this.circle_heading}/>
                 </Container>
 
-
-
-
+                <div className="bg_color2 pt-4 mt-5">
+                <Container className="">
+                <Bottom_component />
+                </Container>
+                </div>
 
 
 

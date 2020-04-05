@@ -47,6 +47,8 @@ export const messages = {
         circle5_h:"总资产",
         circle6_h:"销售奖",
         circle3_d:"台",
+        bottom_heading:"泰国隆振科技有限公司",
+        bottom_address:"",
 
         
 
@@ -95,7 +97,8 @@ export const messages = {
         circle5_h:"จำนวนสินทรัพย์ทั้งหมด",
         circle6_h:"รางวัล",
         circle3_d:"เครื่อง",
-
+        bottom_heading:"บริษัท หลง เจิ้น เทคโนโลยี จำกัด",
+        bottom_address:"ที่อยู่ : 52/1 ม.1 ต.มาบไผ่ อ.บ้านบึง จ.ชลบุรี 20170",
     }
 };
 

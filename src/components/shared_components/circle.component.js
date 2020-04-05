@@ -5,7 +5,7 @@ import React from 'react';
 
 import { Row } from 'react-bootstrap';
 
-
+import '../Stylesheet/Stylesheet_circle.css'
 
 export const Circle_component = (props) => {
     
@@ -24,8 +24,7 @@ export const Circle_component = (props) => {
                                 <>
                                     <div className="bg_color3 ">
                                     <Row className="justify-content-center align-items-center text-center py-2">      
-
-
+                                    
                                     <div className="col-12 col-sm-6 py-3 ">
                                         <h3>{value[0]}</h3>
                                         <div className="circle mx-auto">

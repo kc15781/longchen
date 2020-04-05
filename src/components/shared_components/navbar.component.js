@@ -86,18 +86,17 @@ export const NavBar = (props) => {
         }}>
 
 
-            <Row className="text-center justify-content-center align-items-center" style={{ height: '500px' }}>
-                <Col>
-                        <Row ><Col><Animation_logo /></Col></Row>
+            <div className="text-center py-5" >
 
-                        <Row>
+                        <Animation_logo />
+
                         
-                            <Col style={{ fontSize: '40px', fontWeight: 'bold', marginTop: '20px' }}>< FormattedMessage id="Company" defaultMessage="Longchen Technology" />
-                            </Col>
+                        
+                        <div style={{ fontSize: '40px', fontWeight: 'bold', marginTop: '20px' }}>< FormattedMessage id="Company" defaultMessage="Longchen Technology" /></div>
                           
-                        </Row>
-                </Col>
-            </Row>
+                             
+                
+            </div>
 
 
         </Container>    

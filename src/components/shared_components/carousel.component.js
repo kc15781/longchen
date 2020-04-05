@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container'
 
 import '../Stylesheet/Stylesheet_carousel.css'
-import '../Stylesheet/Stylesheet_circle.css'
+
 export const Carousel_component = (props) => {
  
     const [index, setIndex] = useState(0);
