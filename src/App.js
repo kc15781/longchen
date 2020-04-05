@@ -7,6 +7,7 @@ import { NavBar } from "./components/shared_components/navbar.component"
 import Home from "./components/Home";
 import Product from "./components/Product";
 import Employment from "./components/Employment";
+import Contact from "./components/Contact";
 import { messages } from "./languages/messages";
 import './components/Stylesheet/Stylesheet.css';
 
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/" exact render={(props) => <Home {...props} locale={locale} />} />
                 <Route path="/Product" component={Product} />
                 <Route path="/Employment" component={Employment} />
+                <Route path="/Contact" render={(props) => <Contact {...props} locale={locale} />} />
                 
 
             </Router>

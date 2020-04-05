@@ -48,10 +48,13 @@ export const messages = {
         circle6_h:"销售奖",
         circle3_d:"台",
         bottom_heading:"泰国隆振科技有限公司",
-        bottom_address:"",
+        bottom_address:"地址 : 52/1 Moo 1 Mapphai, Ban Bueng, Chonburi 20170 Thailand",
         gate:"正门",
         office:"办公室 ",
         factory:"工厂 ",
+        open_day:"星期一至星期六",
+        time_zone:"(泰国曼谷时间)",
+
 
         
 
@@ -105,6 +108,9 @@ export const messages = {
         gate:"ประตูหน้า",
         office:"สำนักงาน",
         factory:"โรงงาน",
+        open_day:"วันจันทร์ - วันเสาร์",
+        time_zone:"(เวลาท้องถิ่นประเทศไทย)",
+ 
     }
 };
 

@@ -5,7 +5,7 @@ import { faFacebook, faYoutube, faGooglePlus} from '@fortawesome/free-brands-svg
 import { Row } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import '../Stylesheet/Stylesheet_bottom.css'
-import { Link } from 'react-router-dom';
+
 export const Bottom_component = (props) => {
  
     return (
@@ -22,7 +22,7 @@ export const Bottom_component = (props) => {
             <h5>< FormattedMessage id="bottom_address" defaultMessage="Address : 52/1 Moo 1 Mapphai, Ban Bueng, Chonburi 20170 Thailand" /></h5>
           </div>
           </div>
-          <Row className="text-center justify-content-left align-items-center ml-1">
+          <Row className=" ml-1">
           
           <a target="_blank" href="https://www.facebook.com/lonchentechnology/?fref=ts"><FontAwesomeIcon className="icon ml-5" icon={faFacebook} /></a>
           <a target="_blank" href="https://www.youtube.com/channel/UCupIo_KRbuer49IVttC4TJw"><FontAwesomeIcon className="icon mx-4" icon={faYoutube} /></a>
