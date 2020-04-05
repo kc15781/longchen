@@ -49,6 +49,9 @@ export const messages = {
         circle3_d:"台",
         bottom_heading:"泰国隆振科技有限公司",
         bottom_address:"",
+        gate:"正门",
+        office:"办公室 ",
+        factory:"工厂 ",
 
         
 
@@ -99,6 +102,9 @@ export const messages = {
         circle3_d:"เครื่อง",
         bottom_heading:"บริษัท หลง เจิ้น เทคโนโลยี จำกัด",
         bottom_address:"ที่อยู่ : 52/1 ม.1 ต.มาบไผ่ อ.บ้านบึง จ.ชลบุรี 20170",
+        gate:"ประตูหน้า",
+        office:"สำนักงาน",
+        factory:"โรงงาน",
     }
 };
 

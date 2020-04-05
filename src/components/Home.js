@@ -14,7 +14,7 @@ import {Bottom_component} from './shared_components/bottom.component.js'
 export default class Home extends Component {
     constructor(props) {
         super(props);
-        this.src=['sup1', 'sup2','sup3','sup4','cloth','sponge','polisher','hooks','hook','hook_set','soap','toothbrush','towel'];
+        this.src_product=['sup1', 'sup2','sup3','sup4','cloth','sponge','polisher','hooks','hook','hook_set','soap','toothbrush','towel'];
 
         this.product_title= [< FormattedMessage id="supa1" defaultMessage="SupaMop I" />, < FormattedMessage id="supa2" defaultMessage="SupaMop II" />,
         < FormattedMessage id="supa3" defaultMessage="SupaMop III" />,< FormattedMessage id="supa4" defaultMessage="SupaMop IV" />,
@@ -25,6 +25,15 @@ export default class Home extends Component {
         < FormattedMessage id="tooth" defaultMessage="Toothbrush Holder " />,< FormattedMessage id="towel" defaultMessage="Towel Rack" />];
 
         this.product_directory="./pictures/product_img/home_page/";
+        this.src_company=['1', '2','3','4','5','6','7','8','9','10','11','12','13','14'];
+
+        this.company_title= [< FormattedMessage id="gate" defaultMessage="Front gate" />, < FormattedMessage id="office" defaultMessage="Office" />,
+        < FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="factory" defaultMessage="Factory" />,
+        < FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="factory" defaultMessage="Factory" />,
+        < FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="factory" defaultMessage="Factory" />,< FormattedMessage id="office" defaultMessage="Office" />,
+        < FormattedMessage id="office" defaultMessage="Office" />,< FormattedMessage id="office" defaultMessage="Office" />,< FormattedMessage id="office" defaultMessage="Office" /> ];
+        this.company_directory="./pictures/company/";
+        
         this.state = { map_directory: '.png' };
 
         this.circle_heading=[[< FormattedMessage id="circle1_h" defaultMessage="Land" />,< FormattedMessage id="circle2_h" defaultMessage="Number of workers" />],
@@ -141,7 +150,7 @@ export default class Home extends Component {
                  <h1 className="mb-1 pt-5" style={{borderBottom:"solid white", textAlign:'center'}}>< FormattedMessage id="Products_title" defaultMessage="Our Products" /></h1>   
                  <Row>
                  <div className="col-12 col-xl-6">
-                 <Carousel_component  src={this.src} title={this.product_title} directory={this.product_directory}/>
+                 <Carousel_component  src={this.src_product} title={this.product_title} directory={this.product_directory}/>
                  </div>   
                  <div className="col-12 col-xl-6 mt-5">
                         
@@ -162,6 +171,12 @@ export default class Home extends Component {
                 <Container className="mt-5">
                 <Circle_component  detail={this.circle_detail} heading={this.circle_heading}/>
                 </Container>
+
+                <Container className="mt-5">
+                
+                <Carousel_component  src={this.src_company} title={this.company_title} directory={this.company_directory}/>
+                 
+                 </Container>
 
                 <div className="bg_color2 pt-4 mt-5">
                 <Container className="">
