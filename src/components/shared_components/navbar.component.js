@@ -66,7 +66,7 @@ export const NavBar = (props) => {
                     <Nav><Link to="/Products" className="nav-link">< FormattedMessage id="nav_Products" defaultMessage="Products" /></Link></Nav>
                     <Nav><Link to="/Employment" className="nav-link">< FormattedMessage id="nav_Employment" defaultMessage="Employment" /></Link></Nav>
                     <Nav><Link to="#" className="nav-link">< FormattedMessage id="nav_Contact" defaultMessage="Contact" /></Link></Nav>
-                    <Nav><Link to="#" className="nav-link">< FormattedMessage id="nav_Catalogue" defaultMessage="Catalogue" /></Link></Nav>
+                    <Nav><Link to="./Catalogue.pdf" className="nav-link" target="_blank" download>< FormattedMessage id="nav_Catalogue" defaultMessage="Catalogue" /></Link></Nav>
                 </Nav>
                 <Nav>
                     <Nav className="nav-link"></Nav>
