@@ -9,7 +9,7 @@ import {Circle_component} from './shared_components/circle.component.js'
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Bottom_component} from './shared_components/bottom.component.js'
+
 
 export default class Home extends Component {
     constructor(props) {
@@ -43,7 +43,7 @@ export default class Home extends Component {
     this.circle_detail=[[ <React.Fragment>35200 m<sup>2</sup></React.Fragment>,"58"],
     [<React.Fragment><div>30 < FormattedMessage id="circle3_d" defaultMessage="machines"/></div><div>120 - 650t</div></React.Fragment>,"ODM"],
     ["260M ฿","7-Catalog"]];
-       
+   
     }
     componentDidUpdate(prevProps) {
 
@@ -178,11 +178,7 @@ export default class Home extends Component {
                  
                  </Container>
 
-                <div className="bg_color2 pt-4 mt-5">
-                <Container className="">
-                <Bottom_component />
-                </Container>
-                </div>
+
 
 
 
