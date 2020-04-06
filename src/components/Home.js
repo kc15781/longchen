@@ -107,22 +107,22 @@ export default class Home extends Component {
 
 
 
-                   
-                    
-                    <Row className="bg_color5 shadow_custom" data-aos="flip-left">
-                        <div className="col-auto ml-auto ">   
-                            <Image src={"./pictures/taiwan_mark"+this.state.map_directory} style={{height:"500px"}} />
-                        </div>    
+
+                    <div className="container-fluid">
+                        <Row className="bg_color5 shadow_custom" data-aos="flip-left">
+                            <div className="col-auto ml-auto ">   
+                                <Image src={"./pictures/taiwan_mark"+this.state.map_directory} style={{height:"500px"}} />
+                            </div>    
                       
-                        <div className="col-auto mr-auto ">   
+                            <div className="col-auto mr-auto ">   
                         
                         
-                       <Image src={"./pictures/thailand_mark"+this.state.map_directory} style={{height:"500px"}} />
+                           <Image src={"./pictures/thailand_mark"+this.state.map_directory} style={{height:"500px"}} />
                           
-                        </div>
+                            </div>
                         
-                    </Row>   
-                   
+                        </Row>   
+                    </div>
 
 
                         
